@@ -1,3 +1,4 @@
 <div class="container">
   <app-dir-upload (change)="onUploadChange($event)"></app-dir-upload>
+  <app-file-list [files]="files" (uploadComplete)="onUploadComplete()"></app-file-list>
 </div>

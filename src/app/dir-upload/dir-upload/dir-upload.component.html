@@ -1,5 +1,5 @@
 <div class="drop-zone" [ngClass]="{'dragging': isDragging}" (dragenter)="onDragStart($event)"
   (dragover)="onDragStart($event)" (dragleave)="onDragStop($event)" (drop)="onDrop($event)" (click)="onClick()">
-  <label>Choose your directory or drag it here v2</label>
+  <label>Choose your directory or drag it here</label>
   <input type="file" class="input" accept="*" (change)="onChange($event)" webkitdirectory #fileInputEl />
 </div>

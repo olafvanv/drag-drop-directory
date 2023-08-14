@@ -1,0 +1,18 @@
+:host {
+  background-color: #efefef;
+  padding: 8px;
+  min-width: 500px;
+  height: 350px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  flex: 1;
+  overflow: auto;
+}
+
+mat-list-item {
+  background-color: #fff;
+}

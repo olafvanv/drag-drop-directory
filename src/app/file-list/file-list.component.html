@@ -1,0 +1,15 @@
+<div class="list">
+  <mat-list role="list">
+    <div mat-subheader>Files</div>
+    <ng-container *ngFor="let item of files">
+      <mat-list-item role="list-item">
+        <span matListItemTitle>{{item.file.name}}</span>
+        <span matListItemLine class="subtitle">{{item.path}}</span>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </ng-container>
+  </mat-list>
+</div>
+<div *ngIf="!files.length">Select files by dragging or selecting the drop are above</div>
+
+<button mat-raised-button [disabled]="!files.length" (click)="uploadFiles()" color="primary">Upload</button>

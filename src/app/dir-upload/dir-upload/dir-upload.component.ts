@@ -63,6 +63,7 @@ export class DirUploadComponent {
         .map((m) => m.webkitGetAsEntry()) as FileSystemEntry[];
 
       this.createTree(entries, '').then((tree) => {
+        this.uploadFiles = [];
         this.parseToUploadFiles(tree, '');
         this.change.emit(this.uploadFiles);
       });
